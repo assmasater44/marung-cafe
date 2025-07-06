@@ -1,0 +1,135 @@
+/* Reset and base */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #fdf9f5;
+  color: #003f36;
+}
+
+/* Header */
+header {
+  background-color: #00463d;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  color: white;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  height: 40px;
+  width: auto;
+}
+
+.slogan {
+  font-style: italic;
+  font-size: 0.9rem;
+  color: #ffc107;
+}
+
+/* Nav Links */
+nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.social-links img.social-icon {
+  height: 28px;
+  margin-left: 10px;
+}
+
+/* Menu Content */
+.menu-content {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.menu-content h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1em;
+}
+
+.menu-section {
+  margin-bottom: 30px;
+}
+
+.menu-section h3 {
+  color: #006b54;
+  margin-bottom: 0.5em;
+}
+
+.menu-section ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+/* Gallery */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.gallery img {
+  width: 120px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+/* Floating Icons */
+.floating-icon {
+  position: absolute;
+  font-size: 24px;
+  animation: floatUp 6s linear forwards;
+  z-index: 0;
+}
+
+@keyframes floatUp {
+  from {
+    transform: translateY(100%);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(-200%);
+    opacity: 0;
+  }
+}
+
+/* WhatsApp float */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 10;
+}
+
+.whatsapp-float img {
+  width: 48px;
+}
+
+/* Footer */
+footer {
+  background-color: #00463d;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 40px;
+}

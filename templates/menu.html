@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu | Marung Café</title>
+  <link rel="stylesheet" href="/static/styles.css">
+  <script defer>
+    window.addEventListener('DOMContentLoaded', () => {
+      setInterval(() => {
+        const icons = [
+          '🍰','🍪','🍩','🥪','🥗','🧁','🍮','🥐','🍫','🥯','🧃','🍹','🥤','🍵'
+        ];
+        const container = document.querySelector('.menu-content');
+        if (container) {
+          const icon = document.createElement('div');
+          icon.className = 'floating-icon';
+          icon.style.left = `${Math.random() * 100}%`;
+          icon.textContent = icons[Math.floor(Math.random() * icons.length)];
+          container.appendChild(icon);
+          setTimeout(() => icon.remove(), 6000);
+        }
+      }, 1200);
+    });
+  </script>
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="/static/logo.png" alt="Marung Logo" class="logo">
+      <div>
+        <h1>Marung Café</h1>
+        <p class="slogan">Bite. Sip. Smile.</p>
+      </div>
+    </div>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/menu">Menu</a>
+      <a href="/location">Location</a>
+    </nav>
+    <div class="social-links">
+      <a href="https://wa.me/" target="_blank"><img src="/static/whatsapp.png" class="social-icon" alt="WhatsApp"></a>
+      <a href="https://instagram.com" target="_blank"><img src="/static/instagram.png" class="social-icon" alt="Instagram"></a>
+    </div>
+  </header>
+
+  <main class="menu-content">
+    <h2>Our Menu</h2>
+
+    <section class="menu-section">
+      <h3>Sandwiches 🥪</h3>
+      <ul>
+        <li>כריך מוצרלה – ₪32 / ₪53</li>
+        <li>כריך כתף בקר – ₪39 / ₪62</li>
+        <li>כריך חלומי – ₪39 / ₪62</li>
+        <li>כריך סלמון מעושן – ₪39 / ₪62</li>
+        <li>כריך טונה – ₪32 / ₪50</li>
+      </ul>
+    </section>
+
+    <section class="menu-section">
+      <h3>Desserts 🍰</h3>
+      <ul>
+        <li>פאי גבינה</li>
+        <li>עוגת תמרים</li>
+        <li>קיסטארט אספרי</li>
+        <li>עוגת נס קפה</li>
+      </ul>
+    </section>
+
+    <section class="gallery">
+      <img src="/static/cake1.png" alt="Cake">
+      <img src="/static/cake2.png" alt="Cake">
+      <img src="/static/sandwich1.png" alt="Sandwich">
+      <img src="/static/sandwich2.png" alt="Sandwich">
+    </section>
+  </main>
+
+  <a href="https://wa.me/" class="whatsapp-float" target="_blank">
+    <img src="/static/whatsapp.png" alt="WhatsApp">
+  </a>
+
+  <footer>
+    <p>&copy; 2025 Marung Café. All rights reserved.</p>
+  </footer>
+</body>
+</html>
